@@ -1,2 +1,2 @@
-# func-prog-in-scala
-Implementations for exercises in Functional Programming In Scala
+# fp-in-scala
+Implementations of exercises in Functional Programming In Scala
