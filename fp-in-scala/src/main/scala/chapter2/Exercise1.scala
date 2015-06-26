@@ -5,9 +5,8 @@ import scala.annotation.tailrec
 /**
  * @author Atindriya
  */
-object Excercise1 {
-  
-  
+object Exercise1 {
+
   // Terrible first attempt.
   def fib1(N: Int): Int = {
     @tailrec
@@ -26,7 +25,7 @@ object Excercise1 {
   }
 
   // Optimized.
-  def fib2(n: Int): Int = {    
+  def fib2(n: Int): Int = {
     @tailrec
     def go(n: Int, p1: Int, p2: Int): Int = {
       n match {
@@ -37,11 +36,11 @@ object Excercise1 {
 
     go(n, 0, 1)
   }
-    
+
   def formatResult(max: Int, f: (Int) => Int): String = {
     s"The ${max}th number in the Fibonacci series is ${f(max)}"
   }
-  
+
   def main(args: Array[String]): Unit = {
     val n = 8
     println(formatResult(n, fib1))
