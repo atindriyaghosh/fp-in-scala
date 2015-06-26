@@ -2,12 +2,11 @@ package chapter2
 
 import scala.annotation.tailrec
 
-
-
 /**
  * @author Atindriya
  */
-object Fibonacci {
+object Excercise1 {
+  
   
   // Terrible first attempt.
   def fib1(N: Int): Int = {
@@ -48,4 +47,5 @@ object Fibonacci {
     println(formatResult(n, fib1))
     println(formatResult(n, fib2))
   }
+
 }
